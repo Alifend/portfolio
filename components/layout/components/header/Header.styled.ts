@@ -49,8 +49,12 @@ export const StyledHeader = styled.header<Props>`
       transition: left 0.6s ease;
     }
   }
-  h5 {
+  .menu {
     display: none;
+    filter: invert(99%) sepia(2%) saturate(2%) hue-rotate(244deg)
+      brightness(104%) contrast(100%);
+    height: 50px;
+    width: 50px;
   }
   @media (max-width: 768px) {
     nav > ul {
@@ -63,7 +67,7 @@ export const StyledHeader = styled.header<Props>`
       background-color: #333;
       flex-direction: column;
     }
-    h5 {
+    .menu {
       display: block;
     }
   }

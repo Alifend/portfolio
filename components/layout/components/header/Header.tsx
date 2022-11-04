@@ -29,7 +29,7 @@ const Header = () => {
       <nav>
         <ul
           onClick={() => setShowMenu(true)}
-          style={showMenu ? { left: "-100%" } : { left: "0" }}
+          style={showMenu ? { left: "0" } : { left: "-100%" }}
         >
           <StyledLink scroll={false} isactive={isActive("/")} href="/">
             Home
@@ -57,7 +57,15 @@ const Header = () => {
           </StyledLink>
         </ul>
       </nav>
-      <h5 onClick={() => setShowMenu(!showMenu)}>Hamburguesa</h5>
+      <motion.img
+        className="menu"
+        initial={{ rotate: 0 }}
+        exit={{ rotate: 0 }}
+        animate={{ rotate: showMenu ? 90 : 0 }}
+        src={showMenu ? "/close.svg" : "/menu.svg"}
+        onClick={() => setShowMenu(!showMenu)}
+      />
+      {/* <h5 onClick={() => setShowMenu(!showMenu)}>Hamburguesa</h5> */}
     </StyledHeader>
   );
 };

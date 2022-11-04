@@ -6,7 +6,7 @@ import { Paragraph, SubTitle, Title } from "../components/common/Common.styled";
 import Layout from "../components/layout";
 
 const Container = styled.section`
-  max-width: 1100px;
+  width: min(90%, 1200px);
   padding-top: 7rem;
   margin-inline: auto;
   p {

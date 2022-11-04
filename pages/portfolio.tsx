@@ -6,7 +6,8 @@ import Layout from "../components/layout";
 import { ProjectsData } from "../data/projects";
 
 const Container = styled.section`
-  max-width: 1200px;
+  width: min(90%, 1200px);
+  /* max-width: 1200px; */
   padding-top: 7rem;
   margin-inline: auto;
 `;
@@ -22,8 +23,8 @@ const Portfolio = () => {
     <Container>
       <Title style={{ marginBottom: "2rem" }}>My projects</Title>
       <ProjectsContainer>
-        {ProjectsData.map((project) => (
-          <CardProject {...project} />
+        {ProjectsData.map((project, index) => (
+          <CardProject key={index} {...project} />
         ))}
       </ProjectsContainer>
     </Container>
