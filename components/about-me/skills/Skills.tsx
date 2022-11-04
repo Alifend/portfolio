@@ -2,13 +2,39 @@ import React from "react";
 import Collapsible from "../collapsible/Collapsible";
 
 const mockedData = [
-  { name: "HTML", tools: [] },
-  { name: "CSS", tools: ["Bootstrap", "Tailwind"] },
-  { name: "Javascript", tools: ["Bootstrap", "Tailwind"] },
-  { name: "React", tools: ["Redux", "framer-motion", "react-query"] },
-  { name: "Node", tools: ["Express", "Nestjs"] },
-  { name: "SQL", tools: ["Postgres", "MYSQL"] },
-  { name: "NOSQL", tools: ["MongoDB", "Firebase"] },
+  { name: "HTML", tools: ["Semantic HTML"] },
+  { name: "CSS", tools: ["Bootstrap", "Tailwind", "CSS-Modules"] },
+  {
+    name: "Javascript",
+    tools: [
+      "Typescript",
+      "Axios",
+      "Promises",
+      "Asyn-Await",
+      "DOM",
+      "LocalStorage",
+      "Callbacks",
+      "Highcharts",
+      "Moment",
+    ],
+  },
+  {
+    name: "React",
+    tools: [
+      "Nextjs",
+      "Redux",
+      "Framer-motion",
+      "React-query",
+      "Styled-Components",
+      "MUI",
+      "React-leaflet",
+      "Yup",
+      "Formik",
+    ],
+  },
+  { name: "Node", tools: ["Express", "Nestjs", "JWT", "Bcrypt", "Nodemailer"] },
+  { name: "SQL", tools: ["Postgres", "MySQL", "TypeORM", "PrismaORM"] },
+  { name: "NOSQL", tools: ["MongoDB", "Mongoose", "Firebase"] },
 ];
 const Skills = () => {
   return (
