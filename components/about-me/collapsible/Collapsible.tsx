@@ -101,7 +101,7 @@ const Collapsible: FC<Props> = ({ name, tools }) => {
         }
       >
         {tools.map((tool) => (
-          <ItemList>
+          <ItemList key={tool}>
             <Figure>
               <GreenCircle /> <Bar />
             </Figure>

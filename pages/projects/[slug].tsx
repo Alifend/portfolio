@@ -1,6 +1,6 @@
 import { ProjectsData } from "../../data/projects";
 import Layout from "../../components/layout";
-import type { GetStaticPropsContext, NextPage } from "next";
+import type { GetStaticPropsContext } from "next";
 import {
   ContainedButton,
   OutlinedButton,
@@ -92,14 +92,16 @@ export default function Project({ project }: { project: ProjectProps }) {
   return (
     <Container>
       <TitleContainer>
-        <BackButton onClick={() => router.back()}>
-          <BackArrow src="/arrow.svg" alt="back arrow" />
-        </BackButton>
+        <Link href="/portfolio" scroll={false}>
+          <BackButton>
+            <BackArrow src="/arrow.svg" alt="back arrow" />
+          </BackButton>
+        </Link>
         <Title>{project.title}</Title>
       </TitleContainer>
       <ChipsContainer>
         {project.tools.map((tool) => (
-          <Chip>{tool}</Chip>
+          <Chip key={tool}>{tool}</Chip>
         ))}
       </ChipsContainer>
       <Image src={project.image} alt={project.title} />

@@ -13,8 +13,8 @@ const mockedData = [
 const Skills = () => {
   return (
     <div style={{ borderRadius: "15px", overflow: "hidden", padding: "2px" }}>
-      {mockedData.map((element) => (
-        <Collapsible {...element} />
+      {mockedData.map((element, index) => (
+        <Collapsible key={index} {...element} />
       ))}
     </div>
   );

@@ -27,7 +27,7 @@ const CardProject: FC<CardProjectProps> = (props) => {
       /> */}
       <HoverInfo className="hover">
         <h4>{props.description}</h4>
-        <Link href={"/projects/" + props.slug}>
+        <Link scroll={false} href={"/projects/" + props.slug}>
           <button>{props.title}</button>
         </Link>
       </HoverInfo>

@@ -38,10 +38,4 @@ export const StyledProjects = styled.section`
     justify-content: center;
     gap: 4rem;
   }
-
-  @media screen and (max-width: 768px) {
-    .projectsContainer {
-      /* gap: 0.5rem; */
-    }
-  }
 `;

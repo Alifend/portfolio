@@ -21,7 +21,7 @@ const Projects = () => {
         ))}
       </motion.div>
       <motion.div {...Fade} className="buttonsBox">
-        <Link href="portfolio">
+        <Link scroll={false} href="portfolio">
           <ContainedButton>More Projects</ContainedButton>
         </Link>
         <OutlinedButton>Contact me</OutlinedButton>
