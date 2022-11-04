@@ -56,6 +56,7 @@ export const ProjectsData: CardProjectProps[] = [
     slug: "edie-homepage",
     goals: "Create a homepage",
     description: "Landing page for an generic company",
+    github: "",
     image:
       "https://user-images.githubusercontent.com/47732101/198864764-bacb1a41-896e-42aa-a0a1-03fd6583f20b.png",
     link: "https://edie-homepage-alifend.netlify.app/",
@@ -66,6 +67,7 @@ export const ProjectsData: CardProjectProps[] = [
     slug: "recipe",
     goals: "Create a recipe page",
     description: "Page for a recipe",
+    github: "",
     image:
       "https://user-images.githubusercontent.com/47732101/198864764-bacb1a41-896e-42aa-a0a1-03fd6583f20b.png",
     link: "https://recipe-page-alifend.netlify.app/",
@@ -76,6 +78,7 @@ export const ProjectsData: CardProjectProps[] = [
     slug: "checkout",
     goals: "Create a checkout page",
     description: "Final checkout page for a purchase",
+    github: "",
     image:
       "https://user-images.githubusercontent.com/47732101/198864764-bacb1a41-896e-42aa-a0a1-03fd6583f20b.png",
     link: "https://checkout-page-alifend.netlify.app/",
@@ -86,6 +89,7 @@ export const ProjectsData: CardProjectProps[] = [
     slug: "interior-consultant",
     goals: "Create a interior consultant page",
     description: "Landing page for an interior consultant",
+    github: "",
     image:
       "https://user-images.githubusercontent.com/47732101/198864764-bacb1a41-896e-42aa-a0a1-03fd6583f20b.png",
     link: "https://interior-consultant-alifend.netlify.app/",
@@ -96,6 +100,7 @@ export const ProjectsData: CardProjectProps[] = [
     slug: "gallery",
     goals: "Create a gallery",
     description: "Prototype of profile page ",
+    github: "",
     image:
       "https://user-images.githubusercontent.com/47732101/198864764-bacb1a41-896e-42aa-a0a1-03fd6583f20b.png",
     link: "https://my-gallery-alifend.netlify.app/",
@@ -106,6 +111,7 @@ export const ProjectsData: CardProjectProps[] = [
     slug: "my-team",
     goals: "Create a team page",
     description: "Page to show your team",
+    github: "",
     image:
       "https://user-images.githubusercontent.com/47732101/198864764-bacb1a41-896e-42aa-a0a1-03fd6583f20b.png",
     link: "https://my-team-page-alifend.netlify.app/",
@@ -116,6 +122,7 @@ export const ProjectsData: CardProjectProps[] = [
     slug: "error-page",
     goals: "Create a error page",
     description: "404 page for a website",
+    github: "",
     image:
       "https://user-images.githubusercontent.com/47732101/198864764-bacb1a41-896e-42aa-a0a1-03fd6583f20b.png",
     link: "https://404-not-found-alifend.netlify.app/",
