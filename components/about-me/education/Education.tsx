@@ -61,7 +61,7 @@ const Education = () => {
           <Bar />
         </Figure>
         <Info>
-          <Date>2017 - Now</Date>
+          <Date>2017 - Present</Date>
           <Spot>Universidad del Valle</Spot>
           <Level>
             Bachelor Degree:

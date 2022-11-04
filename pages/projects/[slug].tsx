@@ -10,15 +10,7 @@ import {
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import Link from "next/link";
-
-type ProjectProps = {
-  title: string;
-  slug: string;
-  description: string;
-  image: string;
-  link: string;
-  tools: string[];
-};
+import { CardProjectProps } from "../../components/home/projects/card-project/CardProject";
 
 const Container = styled.section`
   width: min(90%, 1100px);
@@ -86,7 +78,7 @@ const BackArrow = styled.img`
   filter: brightness(0) invert(1);
 `;
 
-export default function Project({ project }: { project: ProjectProps }) {
+export default function Project({ project }: { project: CardProjectProps }) {
   const router = useRouter();
 
   return (
@@ -109,7 +101,7 @@ export default function Project({ project }: { project: ProjectProps }) {
         <a href={project.link} target="_blank">
           <OutlinedButton>Live Website</OutlinedButton>
         </a>
-        <a href={project.link} target="_blank">
+        <a href={project.github} target="_blank">
           <ContainedButton>Github</ContainedButton>
         </a>
       </ButtonsContainer>
