@@ -53,9 +53,21 @@ export const HoverInfo = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+  overflow: hidden;
   h4 {
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-3);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+    overflow: hidden;
+    max-height: 8rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
   }
   button {
     padding: 1rem;
