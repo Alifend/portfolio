@@ -57,17 +57,14 @@ export const HoverInfo = styled.div`
   h4 {
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-3);
-    text-overflow: ellipsis;
     overflow: hidden;
     width: 80%;
-    overflow: hidden;
     max-height: 8rem;
     -webkit-box-orient: vertical;
-    display: block;
     display: -webkit-box;
-    overflow: hidden !important;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
+    text-align: center;
   }
   button {
     padding: 1rem;
