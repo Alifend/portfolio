@@ -4,9 +4,10 @@ export const ProjectsData: CardProjectProps[] = [
   {
     title: "Shoppingify",
     slug: "shoppingify",
-    goals: "Create a shopping list app ",
+    goals:
+      "I wanted to learn how to use react-query, since I had heard it was a awesome tool to manage cache . I gave it a try and I loved, using custom hooks I was able to re use the same logic in different parts of the app to make API calls and have cached data. Also I wanted to re learn Redux because it was changed a lot since a was working with it last time.",
     description:
-      "Keep your shopping list in one place lorem rem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+      "It's a project made to keep track of all your ingredients and items on a shopping. Allows you to create new items, add them to a cart and save them in a list to use later. Also has a statistics page where you can see the items you buy the most.",
     image:
       "https://user-images.githubusercontent.com/47732101/187781342-80b2bf85-9319-4773-b324-c13c74bc7b9d.png",
     link: "https://shoppingify-alifend.netlify.app/home",
@@ -26,8 +27,10 @@ export const ProjectsData: CardProjectProps[] = [
   {
     title: "Cat Wiki",
     slug: "cat-wiki",
-    goals: "Create a cat wiki app",
-    description: "Find out all breeds of cats",
+    goals:
+      "I wanted to try Incremetal Static Regeneration to build different static sites with Nextjs, there is a prop called revalidate that allows you to have dynamic content with static performance, I used to generate a page that had dynamic data to show the top most searched cats",
+    description:
+      "Cat wiki allows you to search among 67 breeds and see the details of each one",
     image:
       "https://user-images.githubusercontent.com/47732101/198864631-6010bc48-94df-4870-8bfb-d6a1952e2f97.png",
     link: "https://cat-wiki-frontend-i52m.vercel.app/",
@@ -43,9 +46,11 @@ export const ProjectsData: CardProjectProps[] = [
   {
     title: "TypeRacer",
     slug: "typeracer",
-    goals: "Create a typing game",
+    goals:
+      "I wanted to replicate an interested mechanic from a game from typeracer.com. I was learning reactive programming and it was a challenge but satisfactory project to make.",
     github: "https://github.com/Alifend/typeracer",
-    description: "Practice your typing skills",
+    description:
+      "You can practice your typing skills with this game, you can use your own text or get one random quote from an API.",
     image:
       "https://user-images.githubusercontent.com/47732101/199999339-b9e091cd-a2e7-4344-b42e-dff80052309b.png",
     link: "https://alifend-typeracer.netlify.app/",

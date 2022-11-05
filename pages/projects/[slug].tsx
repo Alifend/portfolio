@@ -106,11 +106,10 @@ export default function Project({ project }: { project: CardProjectProps }) {
         </a>
       </ButtonsContainer>
       <SubTitle>Goals</SubTitle>
-      <Text>{project.description}</Text>
+      <Text>{project.goals}</Text>
       <SubTitle>Description</SubTitle>
       <Text>{project.description}</Text>
       <SubTitle>Images</SubTitle>
-      Projects
     </Container>
   );
 }
