@@ -3,6 +3,7 @@ import { OutlinedButton } from "../../common/Common.styled";
 import { StyledAboutMe } from "./AboutMe.styled";
 import { motion } from "framer-motion";
 import { Fade } from "../../animations/animations";
+import Link from "next/link";
 const AboutMe = () => {
   return (
     <StyledAboutMe>
@@ -28,7 +29,9 @@ const AboutMe = () => {
           web! And by doing so, I started to love the world of frontend and
           backend development!
         </motion.p>
-        <OutlinedButton {...Fade}>Learn More</OutlinedButton>
+        <Link scroll={false} href="about-me">
+          <OutlinedButton {...Fade}>Learn More</OutlinedButton>
+        </Link>
       </div>
     </StyledAboutMe>
   );

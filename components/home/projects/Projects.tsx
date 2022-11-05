@@ -24,7 +24,9 @@ const Projects = () => {
         <Link scroll={false} href="portfolio">
           <ContainedButton>More Projects</ContainedButton>
         </Link>
-        <OutlinedButton>Contact me</OutlinedButton>
+        <Link scroll={false} href="contact-me">
+          <OutlinedButton>Contact me</OutlinedButton>
+        </Link>
       </motion.div>
     </StyledProjects>
   );

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 import { ContainedButton, OutlinedButton } from "../../common/Common.styled";
@@ -43,13 +44,17 @@ const Profile = () => {
           digital world!
         </h4>
         <div className="buttons">
-          <ContainedButton>Projects</ContainedButton>
-          <OutlinedButton>Contact me</OutlinedButton>
+          <Link scroll={false} href="portfolio">
+            <ContainedButton>Projects</ContainedButton>
+          </Link>
+          <Link scroll={false} href="contact-me">
+            <OutlinedButton>Contact me</OutlinedButton>
+          </Link>
         </div>
       </div>
       <figure>
         <video style={{ width: "100%" }} height="620" loop muted autoPlay>
-          <source src="/asd.mp4" type="video/mp4"></source>
+          <source src="/animation.mp4" type="video/mp4"></source>
         </video>
       </figure>
     </StyledProfile>
