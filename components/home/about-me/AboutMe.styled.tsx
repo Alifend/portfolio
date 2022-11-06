@@ -10,16 +10,14 @@ export const StyledAboutMe = styled(motion.section)`
   max-width: 100vw;
   height: auto;
   padding: 3rem;
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
+
   & > figure {
     min-width: 300px;
     min-height: 300px;
     position: relative;
   }
   & > div {
-    width: max(50%, 500px);
+    width: max(50%, 600px);
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -38,6 +36,13 @@ export const StyledAboutMe = styled(motion.section)`
       font-size: var(--font-size-12);
       line-height: 1.8;
       font-weight: 300;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1.2rem;
+    & > div {
+      width: 100%;
     }
   }
 `;

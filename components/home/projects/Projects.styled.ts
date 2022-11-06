@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProjects = styled.section`
-  padding-inline: 2rem;
+  padding-inline: 1.2rem;
   padding-block: 2rem;
   color: white;
   background-color: var(--color-gray-200);
@@ -11,7 +11,8 @@ export const StyledProjects = styled.section`
   align-items: center;
   height: auto;
   gap: 2rem;
-  padding-inline: 5rem;
+  /* padding-inline: 5rem; */
+  width: 100%;
 
   .projectsContainer {
     display: flex;

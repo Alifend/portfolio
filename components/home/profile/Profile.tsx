@@ -45,10 +45,14 @@ const Profile = () => {
         </h4>
         <div className="buttons">
           <Link scroll={false} href="portfolio">
-            <ContainedButton>Projects</ContainedButton>
+            <ContainedButton style={{ width: "112px" }}>
+              Projects
+            </ContainedButton>
           </Link>
           <Link scroll={false} href="contact-me">
-            <OutlinedButton>Contact me</OutlinedButton>
+            <OutlinedButton style={{ width: "130px" }}>
+              Contact me
+            </OutlinedButton>
           </Link>
         </div>
       </div>

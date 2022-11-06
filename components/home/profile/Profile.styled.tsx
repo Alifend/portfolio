@@ -9,13 +9,6 @@ export const StyledProfile = styled.section`
   align-items: center;
   background-color: var(--color-gray-200);
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    figure {
-      display: none;
-    }
-  }
-
   div {
     width: max(35%, 520px);
     height: auto;
@@ -47,5 +40,17 @@ export const StyledProfile = styled.section`
   figure {
     width: max(35%, 400px);
     height: auto;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    figure {
+      display: none;
+    }
+    div {
+      width: 90%;
+      h1 {
+        font-size: var(--font-size-6);
+      }
+    }
   }
 `;
