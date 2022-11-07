@@ -3,8 +3,12 @@ import type { AppProps } from "next/app";
 import type {} from "next/app";
 import { GlobalStyles } from "../styles/GlobalStyles";
 import { AnimatePresence } from "framer-motion";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
+import { hotjar } from "react-hotjar";
 export default function App({ Component, pageProps, router }: any) {
+  useEffect(() => {
+    hotjar.initialize(3234941, 6);
+  }, []);
   // use layout if the compoenent has layout prop
   const Layout = Component.layout ?? Fragment;
   const url = `https://localhost:3000${router.route}`;
