@@ -70,6 +70,14 @@ const BackArrow = styled.img`
   filter: brightness(0) invert(1);
 `;
 
+const ImageContainer = styled.figure`
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+`;
 export default function Project({ project }: { project: CardProjectProps }) {
   return (
     <Container>
@@ -86,14 +94,7 @@ export default function Project({ project }: { project: CardProjectProps }) {
           <Chip key={tool}>{tool}</Chip>
         ))}
       </ChipsContainer>
-      <div
-        style={{
-          width: "100%",
-          height: "300px",
-          position: "relative",
-          overflow: "hidden",
-        }}
-      >
+      <ImageContainer>
         <Image
           src={project.image}
           alt={project.title}
@@ -101,7 +102,7 @@ export default function Project({ project }: { project: CardProjectProps }) {
           quality={100}
           style={{ objectFit: "cover" }}
         />
-      </div>
+      </ImageContainer>
       <ButtonsContainer>
         <a href={project.link} target="_blank">
           <OutlinedButton>Live Website</OutlinedButton>
