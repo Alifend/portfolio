@@ -91,7 +91,10 @@ const Collapsible: FC<Props> = ({ name, tools }) => {
         </div>
         <CollapseButton>
           Frameworks/tools{" "}
-          <Arrow style={open ? { rotate: "270deg" } : {}} src="/arrow.svg" />
+          <Arrow
+            style={open ? { rotate: "90deg" } : { rotate: "-90deg" }}
+            src="/arrow.svg"
+          />
         </CollapseButton>
       </Header>
 
