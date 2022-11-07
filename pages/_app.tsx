@@ -15,6 +15,7 @@ export default function App({ Component, pageProps, router }: any) {
   console.log(url);
   return (
     <>
+      <title>Alifend Portfolio</title>
       <GlobalStyles />
       <AnimatePresence
         mode="wait"

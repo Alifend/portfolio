@@ -33,7 +33,6 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="shortcut icon" href="/favicon.png" />
-          <title>Alifend Portfolio</title>
         </Head>
         <body>
           <Main />
