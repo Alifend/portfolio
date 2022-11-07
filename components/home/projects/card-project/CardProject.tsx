@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
+import { ContainedButton } from "../../../common/Common.styled";
 import { Card, Chip, ChipContainer, HoverInfo } from "./Card.styled";
 
 export interface CardProjectProps {
@@ -14,21 +16,17 @@ export interface CardProjectProps {
 }
 const CardProject: FC<CardProjectProps> = (props) => {
   return (
-    <Card url={props.image}>
+    <Card>
+      <Image className="image " src={props.image} alt="" fill />
       <ChipContainer className="chips">
         {props.tools.map((item, index) => (
           <Chip key={index}>{item}</Chip>
         ))}
       </ChipContainer>
-      {/* <Image
-        src="https://areajugones.sport.es/wp-content/uploads/2022/09/cyberpunk-edgerunners-8.jpg"
-        alt=""
-        fill
-      /> */}
       <HoverInfo className="hover">
         <h4>{props.description}</h4>
         <Link scroll={false} href={"/projects/" + props.slug}>
-          <button>{props.title}</button>
+          <ContainedButton className="button">{props.title}</ContainedButton>
         </Link>
       </HoverInfo>
     </Card>

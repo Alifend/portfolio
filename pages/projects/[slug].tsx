@@ -8,9 +8,9 @@ import {
   Title,
 } from "../../components/common/Common.styled";
 import styled from "styled-components";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import { CardProjectProps } from "../../components/home/projects/card-project/CardProject";
+import Image from "next/image";
 
 const Container = styled.section`
   width: min(90%, 1100px);
@@ -57,14 +57,6 @@ const Chip = styled.div`
   padding: 10px;
 `;
 
-const Image = styled.img`
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-`;
-
 const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
@@ -79,8 +71,6 @@ const BackArrow = styled.img`
 `;
 
 export default function Project({ project }: { project: CardProjectProps }) {
-  const router = useRouter();
-
   return (
     <Container>
       <TitleContainer>
@@ -96,7 +86,22 @@ export default function Project({ project }: { project: CardProjectProps }) {
           <Chip key={tool}>{tool}</Chip>
         ))}
       </ChipsContainer>
-      <Image src={project.image} alt={project.title} />
+      <div
+        style={{
+          width: "100%",
+          height: "300px",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          quality={100}
+          style={{ objectFit: "cover" }}
+        />
+      </div>
       <ButtonsContainer>
         <a href={project.link} target="_blank">
           <OutlinedButton>Live Website</OutlinedButton>

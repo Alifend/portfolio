@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["areajugones.sport.es"],
+    domains: ["user-images.githubusercontent.com"],
   },
   compiler: {
     styledComponents: true,

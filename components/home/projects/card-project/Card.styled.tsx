@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
-interface CardProps {
-  url: string;
-}
-
-export const Card = styled.div<CardProps>`
+export const Card = styled.div`
   width: 300px;
   flex-grow: 1;
   height: 250px;
@@ -13,22 +9,12 @@ export const Card = styled.div<CardProps>`
   object-fit: cover;
   border-radius: 12px;
   transition: all 0.6s ease;
-  &:before {
-    content: "";
-    background-image: url(${(props) => props.url});
-    /* background-image: url("https://areajugones.sport.es/wp-content/uploads/2022/09/cyberpunk-edgerunners-8.jpg"); */
-    background-size: cover;
-    position: absolute;
+  .image {
     border-radius: 12px;
-    z-index: 0;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
   }
   &:hover {
     transform: scale(1.05);
-    &:before {
+    .image {
       transition: opacity 0.5s ease;
       opacity: 0.4;
     }
@@ -66,11 +52,8 @@ export const HoverInfo = styled.div`
     -webkit-line-clamp: 3;
     text-align: center;
   }
-  button {
-    padding: 1rem;
-    border-radius: 10px;
-    background-color: var(--color-purple-100);
-    border: none;
+  .button {
+    width: auto;
   }
 `;
 export const Chip = styled.span`
