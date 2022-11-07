@@ -21,6 +21,7 @@ export const OutlinedButton = styled(motion.button)`
 export const ContainedButton = styled(motion.button)`
   padding: 1.4rem 1rem;
   border-radius: 10px;
+  color: white;
   height: 30px;
   width: 150px;
   font-size: var(--font-size-13);

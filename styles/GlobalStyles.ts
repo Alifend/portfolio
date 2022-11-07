@@ -73,7 +73,9 @@ scrollbar-gutter: stable;
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
-        color: white;
+    }
+    #__next{
+       color: white;
     }
 
     button{
