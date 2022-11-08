@@ -14,16 +14,18 @@ export const StyledFooter = styled.footer`
     align-items: center;
     gap: 1rem;
     li {
+      list-style: none;
+    }
+    a {
       border-radius: 50%;
       height: 60px;
       width: 60px;
       border: 3px solid rgba(255, 255, 255, 0.5);
-      list-style: none;
       display: grid;
       place-content: center;
       transition: all 0.3s ease;
     }
-    li:hover {
+    a:hover {
       transform: scale(1.1);
       border: 3px solid white;
     }

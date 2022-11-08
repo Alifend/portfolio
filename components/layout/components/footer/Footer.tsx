@@ -11,21 +11,21 @@ const Footer = () => {
   return (
     <StyledFooter>
       <ul className="links-list">
-        <a href="https://github.com/Alifend" target="_blank">
-          <li>
+        <li>
+          <a href="https://github.com/Alifend" target="_blank">
             <Logo alt="Github logo" src="/github.svg" />
-          </li>
-        </a>
-        <a href="https://www.linkedin.com/in/anfece/" target="_blank">
-          <li>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/anfece/" target="_blank">
             <Logo alt="Linkedin logo" src="/linkedin.svg" />
-          </li>
-        </a>
-        <a href="mailto: andres.celis@correounivalle.edu.co">
-          <li>
+          </a>
+        </li>
+        <li>
+          <a href="mailto: andres.celis@correounivalle.edu.co">
             <Logo alt="email logo" src="/email.svg" />
-          </li>
-        </a>
+          </a>
+        </li>
       </ul>
       <p>“The great aim of education is not knowledge but action.”</p>
       <p>Copyright © 2022 Andrés Celis</p>
