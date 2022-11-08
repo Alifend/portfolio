@@ -15,6 +15,11 @@ export default function App({ Component, pageProps, router }: any) {
   return (
     <>
       <title>Alifend Portfolio</title>
+      <meta
+        key="description"
+        name="description"
+        content={`Andrés Celis Portfolio`}
+      />
       <GlobalStyles />
       <AnimatePresence
         mode="wait"
