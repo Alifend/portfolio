@@ -58,6 +58,7 @@ const Header = () => {
         </ul>
       </nav>
       <motion.img
+        alt="menu"
         className="menu"
         initial={{ rotate: 0 }}
         exit={{ rotate: 0 }}

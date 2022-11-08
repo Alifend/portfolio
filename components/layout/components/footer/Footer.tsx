@@ -13,17 +13,17 @@ const Footer = () => {
       <ul className="links-list">
         <a href="https://github.com/Alifend" target="_blank">
           <li>
-            <Logo src="/github.svg" />
+            <Logo alt="Github logo" src="/github.svg" />
           </li>
         </a>
         <a href="https://www.linkedin.com/in/anfece/" target="_blank">
           <li>
-            <Logo src="/linkedin.svg" />
+            <Logo alt="Linkedin logo" src="/linkedin.svg" />
           </li>
         </a>
         <a href="mailto: andres.celis@correounivalle.edu.co">
           <li>
-            <Logo src="/email.svg" />
+            <Logo alt="email logo" src="/email.svg" />
           </li>
         </a>
       </ul>

@@ -71,7 +71,7 @@ const Modal: FC<Props> = ({ image }) => {
       <StyledModal visible={image ? true : false}>
         {image && (
           <CloseButton onClick={(e) => e}>
-            <img src="/close.svg" alt="" />
+            <img alt="close" src="/close.svg" />
           </CloseButton>
         )}
         <ImageContainer onClick={handleClick}>
