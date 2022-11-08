@@ -31,7 +31,7 @@ export const StyledProfile = styled.section`
       font-size: var(--font-size-14);
       font-weight: var(--font-weight-300);
       span {
-        font-family: "Roboto Mono";
+        font-family: inherit;
         color: var(--color-green-100);
         font-weight: var(--font-weight-300);
       }
