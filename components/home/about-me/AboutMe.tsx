@@ -20,7 +20,10 @@ const AboutMe = () => {
       </motion.figure>
       <div>
         <motion.h3 {...Fade}>About me</motion.h3>
-        <motion.h4 {...Fade}>I am 23 years old</motion.h4>
+        <motion.h4 {...Fade}>
+          I am 23 years old
+          <span> Full-Stack Developer</span> from Colombia
+        </motion.h4>
         <motion.p {...Fade}>
           When my journey in the digital world begon, I discovered a strong
           passion for web development and fell in love with writing code. The

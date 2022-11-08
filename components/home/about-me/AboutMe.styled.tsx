@@ -21,6 +21,10 @@ export const StyledAboutMe = styled(motion.section)`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    span {
+      color: var(--color-green-100);
+    }
     & > h3 {
       font-size: var(--font-size-10);
       font-weight: var(--font-weight-3);
