@@ -13,6 +13,7 @@ export interface CardProjectProps {
   github: string;
   tools: string[];
   slug: string;
+  images: string[];
 }
 const CardProject: FC<CardProjectProps> = (props) => {
   return (
