@@ -11,11 +11,14 @@ import styled from "styled-components";
 import Link from "next/link";
 import { CardProjectProps } from "../../components/home/projects/card-project/CardProject";
 import Image from "next/image";
+import Modal from "../../components/modal";
+import { useEffect, useState } from "react";
 
 const Container = styled.section`
   width: min(90%, 1100px);
   height: auto;
   padding-top: 5rem;
+  padding-bottom: 1rem;
   margin-inline: auto;
 `;
 const Text = styled.p`
@@ -78,7 +81,41 @@ const ImageContainer = styled.figure`
   border-radius: 8px;
   margin-bottom: 1rem;
 `;
+
+const MiniatureImage = styled.figure`
+  width: 370px;
+  flex-grow: 2;
+  height: 300px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+const MiniatureImageContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+`;
 export default function Project({ project }: { project: CardProjectProps }) {
+  const [imageURL, setImageURL] = useState("");
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      setImageURL("");
+      console.log("lkajsdlkasjdklsaj");
+    };
+    window.addEventListener("click", handleClick);
+
+    return () => {
+      window.removeEventListener("click", handleClick);
+    };
+  }, []);
   return (
     <Container>
       <TitleContainer>
@@ -116,6 +153,24 @@ export default function Project({ project }: { project: CardProjectProps }) {
       <SubTitle>Description</SubTitle>
       <Text>{project.description}</Text>
       <SubTitle>Images</SubTitle>
+      <MiniatureImageContainer onClick={(e) => e.stopPropagation()}>
+        {project.images.map((element, index) => (
+          <MiniatureImage
+            key={index}
+            onClick={() => {
+              setImageURL(element);
+            }}
+          >
+            <Image
+              style={{ objectFit: "cover" }}
+              alt="Project image"
+              src={element}
+              fill
+            />
+          </MiniatureImage>
+        ))}
+      </MiniatureImageContainer>
+      <Modal image={imageURL} />
     </Container>
   );
 }
