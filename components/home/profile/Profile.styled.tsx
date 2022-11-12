@@ -8,7 +8,7 @@ export const StyledProfile = styled.section`
   justify-content: center;
   align-items: center;
   background-color: var(--color-gray-200);
-
+  overflow: hidden;
   div {
     width: max(35%, 520px);
     height: auto;
