@@ -3,6 +3,7 @@ import type {} from "next/app";
 import { GlobalStyles } from "../styles/GlobalStyles";
 import { AnimatePresence } from "framer-motion";
 import { Fragment, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { hotjar } from "react-hotjar";
 export default function App({ Component, pageProps, router }: any) {
   useEffect(() => {
@@ -10,8 +11,6 @@ export default function App({ Component, pageProps, router }: any) {
   }, []);
   // use layout if the compoenent has layout prop
   const Layout = Component.layout ?? Fragment;
-  const url = `https://localhost:3000${router.route}`;
-  console.log(url);
   return (
     <>
       <title>Alifend Portfolio</title>
@@ -20,6 +19,7 @@ export default function App({ Component, pageProps, router }: any) {
         name="description"
         content={`Andrés Celis Portfolio`}
       />
+      <Analytics />
       <GlobalStyles />
       <AnimatePresence
         mode="wait"
