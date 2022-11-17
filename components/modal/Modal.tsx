@@ -50,7 +50,6 @@ const CloseButton = styled.button`
 `;
 const Modal: FC<Props> = ({ image }) => {
   const handleClick = (e: SyntheticEvent) => {
-    console.log("propagation called");
     e.stopPropagation();
   };
   if (image === "") return null;

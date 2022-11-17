@@ -108,7 +108,6 @@ export default function Project({ project }: { project: CardProjectProps }) {
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       setImageURL("");
-      console.log("lkajsdlkasjdklsaj");
     };
     window.addEventListener("click", handleClick);
 
