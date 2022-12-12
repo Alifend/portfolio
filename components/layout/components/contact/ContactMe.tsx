@@ -9,7 +9,7 @@ const ContactMe = () => {
       <div className="card">
         <h4>Contact me</h4>
         <h5>Interested in working together? Have any questions? Lets talk!</h5>
-        <Link scroll={false} href="contact-me">
+        <Link scroll={false} href="/contact-me">
           <OutlinedButton>Contact me</OutlinedButton>
         </Link>
       </div>
